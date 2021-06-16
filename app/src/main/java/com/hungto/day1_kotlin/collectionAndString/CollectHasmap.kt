@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.collectionAndString
 
 fun main(args: Array<String>) {
     var map= hashMapOf(1 to "hung",2 to "hung2")

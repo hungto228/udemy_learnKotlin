@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.collectionAndString
 
 fun main(args: Array<String>) {
     var setemenet = setOf(1, 2, 3, 11, 44, 55, 55)

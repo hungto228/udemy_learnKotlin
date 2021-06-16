@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.functions
 
 fun sum(n1: Double, n2: Double): Double {
     //block

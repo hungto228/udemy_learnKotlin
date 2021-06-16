@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.loopcontrol
 
 fun main(args: Array<String>) {
     var count=1

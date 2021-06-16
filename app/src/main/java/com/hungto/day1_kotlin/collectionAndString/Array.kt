@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.collectionAndString
 
 fun main(args: Array<String>) {
     var arrayInt = Array<Int>(5) { 0 }

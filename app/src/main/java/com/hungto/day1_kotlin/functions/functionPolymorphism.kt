@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.functions
 
 fun show(name: String): Unit {
     print("Name" + name)
@@ -13,7 +13,7 @@ fun show(numberD: Double): Unit {
 }
 
 fun main(args: Array<String>) {
-show("hung1")
+    show("hung1")
     show(100)
     show(10.5)
 }

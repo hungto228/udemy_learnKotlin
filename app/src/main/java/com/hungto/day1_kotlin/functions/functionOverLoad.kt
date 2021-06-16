@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.functions
 
 fun sum(n1: Int, n2: Int): Int {
     return n1 + n2

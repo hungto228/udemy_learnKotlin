@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.loopcontrol
 
 fun main(args: Array<String>) {
   for (count1 in 1..5){

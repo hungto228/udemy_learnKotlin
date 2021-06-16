@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.decisionMaking
 
 fun main(args: Array<String>) {
     println("enter your garage: ")

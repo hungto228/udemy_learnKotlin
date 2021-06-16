@@ -1,4 +1,4 @@
-package com.hungto.day1_kotlin
+package com.hungto.day1_kotlin.objectOritentedObject
 
 var fulname="hung"// global var
 fun display():Unit{
