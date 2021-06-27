@@ -12,17 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Day1_kotlin">
-        <activity android:name=".citySunsire.CitySunsireActivity">
+        <activity android:name=".noteAppSqlite.AddNoteActivity"></activity>
+        <activity
+            android:name=".noteAppSqlite.NoteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".citySunsire.CitySunsireActivity" />
         <activity android:name=".zooApp.DetailAnimalActivity" />
-        <activity android:name=".zooApp.ZooActivity">
-
-        </activity>
+        <activity android:name=".zooApp.ZooActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
