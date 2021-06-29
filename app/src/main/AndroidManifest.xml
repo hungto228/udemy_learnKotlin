@@ -4,7 +4,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!--sensor-->
+    <uses-feature android:name="android.hardware.sensor.accelerrometer" android:required="true"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,26 +15,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Day1_kotlin">
-        <activity android:name=".alarm.AlarmActivity">
+        <activity android:name=".lightSensor.LightSensorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".alarm.AlarmActivity">
+
+        </activity>
+
         <receiver android:name=".alarm.BroadcastReceiver">
             <intent-filter>
-                <action android:name="com.test.alarmmanege"/>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.test.alarmmanege" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
         <activity android:name=".noteAppSqlite.AddNoteActivity" />
         <activity
             android:name=".noteAppSqlite.NoteActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".citySunsire.CitySunsireActivity" />
         <activity android:name=".zooApp.DetailAnimalActivity" />
         <activity android:name=".zooApp.ZooActivity" />
