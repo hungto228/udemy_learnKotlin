@@ -4,10 +4,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-<!--sensor-->
-    <uses-feature android:name="android.hardware.sensor.accelerrometer" android:required="true"/>
-
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- sensor -->
+    <uses-feature
+        android:name="android.hardware.sensor.accelerrometer"
+        android:required="true" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,16 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Day1_kotlin">
-        <activity android:name=".lightSensor.LightSensorActivity">
+        <activity android:name=".nimbizzPhoneShake.PhoneShakeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".alarm.AlarmActivity">
+        <activity android:name=".lightSensor.LightSensorActivity">
 
         </activity>
+        <activity android:name=".alarm.AlarmActivity"></activity>
 
         <receiver android:name=".alarm.BroadcastReceiver">
             <intent-filter>
@@ -38,7 +40,7 @@
         <activity android:name=".noteAppSqlite.AddNoteActivity" />
         <activity
             android:name=".noteAppSqlite.NoteActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".citySunsire.CitySunsireActivity" />
         <activity android:name=".zooApp.DetailAnimalActivity" />
         <activity android:name=".zooApp.ZooActivity" />
